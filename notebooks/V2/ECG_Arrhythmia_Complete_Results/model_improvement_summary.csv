@@ -1,0 +1,8 @@
+Model,Change,Target,Accuracy (%),Macro-F1 (%),S F1 (%),V F1 (%),F F1 (%),N F1 (%),Q F1 (%),Best Epoch
+B0,Original 1D CNN,Reference model,94.41,76.29,60.9,86.6,40.0,97.0,97.0,11
+E1,Best epoch by validation Macro-F1,Better model selection,96.28,83.96,63.48,92.51,68.12,97.92,97.77,16
+E2,Lower LR + gradient clipping + BN momentum,More stable training,93.58,78.3,49.13,90.77,58.49,96.27,96.84,28
+E3,Square-root class weights,Reduce over-prediction of rare classes,97.39,87.58,69.84,94.19,76.97,98.58,98.29,23
+E4,Light ECG augmentation,Improve rare-class generalisation,97.02,86.2,66.16,91.93,76.25,98.4,98.29,25
+E5,Deeper residual 1D CNN,Increase model capacity,98.29,90.77,81.22,95.7,78.53,99.13,99.28,18
+Final,E5 + tuned thresholds,Final selected model,98.41,91.1,82.14,95.87,79.23,99.18,99.06,18

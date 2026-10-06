@@ -1,0 +1,8 @@
+ID,Change,Val macro-F1,Test acc,Test macro-F1,Recall S,Recall F,Precision S,Precision F,Best epoch
+B0,Baseline (earlier run),,94.41,76.29,66.91,86.42,55.86,26.02,11
+E1,Best epoch chosen by validation macro-F1,85.43,96.28,83.96,71.58,87.04,57.02,55.95,16
+E2,"+ stable training (lr 0.0005, clipping, BN momentum 0.9)",79.35,93.58,78.3,79.14,88.27,35.63,43.73,28
+E3,+ softer (square-root) class weights,88.65,97.39,87.58,68.53,78.4,71.21,75.6,23
+E4,+ light augmentation,88.01,97.02,86.2,62.23,80.25,70.61,72.63,25
+E5,+ deeper residual network,93.19,98.29,90.77,83.63,79.01,78.95,78.05,18
+Final,E5 + tuned thresholds,93.95,98.41,91.1,77.34,76.54,87.58,82.12,18
